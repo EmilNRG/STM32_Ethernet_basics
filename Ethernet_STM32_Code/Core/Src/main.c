@@ -91,8 +91,6 @@ static void udp_send_text(char *text)
 }
 /* USER CODE END 0 */
 
-/* USER CODE END 0 */
-
 /**
   * @brief  The application entry point.
   * @retval int
