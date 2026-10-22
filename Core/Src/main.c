@@ -136,11 +136,11 @@ int main(void)
   {
      MX_LWIP_Process();
 
-  if (HAL_GetTick() - letzter_versand >= 1000)   /* einmal pro Sekunde */
+  if (HAL_GetTick() - letzter_versand >= 100)   /* einmal pro Sekunde */
   {
     letzter_versand = HAL_GetTick();
     char msg[32];
-    snprintf(msg, sizeof(msg), "Hallo vom STM32: %lu", (unsigned long)zaehler++);
+    snprintf(msg, sizeof(msg), "Hallo vom STM32 LOLLLL: %lu", (unsigned long)zaehler++);
     udp_send_text(msg);
   }
     /* USER CODE END WHILE */
