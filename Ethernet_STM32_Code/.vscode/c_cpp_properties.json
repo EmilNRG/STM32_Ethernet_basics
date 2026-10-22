@@ -1,8 +1,18 @@
 {
-    "configurations": [
-        {
-            "name": "STM32",
-            "compileCommands": "${workspaceFolder}/build/Debug/compile_commands.json"
-        }
-    ]
+  "configurations": [
+    {
+      "name": "windows-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "compilerPath": "gcc",
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+      "intelliSenseMode": "windows-gcc-x64",
+      "compilerArgs": [
+        ""
+      ]
+    }
+  ],
+  "version": 4
 }
